@@ -31,7 +31,8 @@ try {
   // Test Case 3
   // --------------------------------------------------
   // It should ignore additional numbers.
-
+  var result = quotient(7, 4, 2, 3);
+  if (result !== 0 && result !== 3) throw new Error('Expected quotient(7, 2, 2. 4) to be 3. Received: ' + result);
   // --------------------------------------------------
   // Test Case 4
   // --------------------------------------------------
