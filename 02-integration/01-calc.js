@@ -1,13 +1,26 @@
 let sum = require("../01-unit/01-sum");
-let difference = require("../01-unit/02-difference");
-let product = require("../01-unit/03-product");
-let quotient = require("../01-unit/04-quotient");
+let diff = require("../01-unit/02-difference");
+let pro = require("../01-unit/03-product");
+let quo = require("../01-unit/04-quotient");
 
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
-function calc() {
-
+function calc(operation,num1,num2) {
+  switch (operation) {
+   case "add": return sum.sum(num1,num2);
+   break;
+   case "subtract": return diff.difference(num1,num2);
+   break;
+   case "product": return pro.product(num1,num2);
+   break;
+   case "quotient": return quo.quotient(num1,num2);
+   break;
+   case "error": return "Specify an operation from add,subtract,product,quotient";
+   break;
+   default: return "Operation Specified is not correct"
+   break;
+  }
 }
 
 // ==================================================
