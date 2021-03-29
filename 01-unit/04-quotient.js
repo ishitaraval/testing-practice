@@ -14,7 +14,7 @@ try {
   // --------------------------------------------------
   // It should return the quotient of two numbers.
   var result = quotient(2, 2);
-  if (result !== 1) throw new Error('Expected quotient(2, 2) to be 1. Received: ' + result);
+  if (result !== 0) throw new Error('Expected quotient(2, 2) to be 1. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 2
