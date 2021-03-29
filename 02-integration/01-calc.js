@@ -1,3 +1,8 @@
+let sum = require("../01-unit/01-sum");
+let difference = require("../01-unit/02-difference");
+let product = require("../01-unit/03-product");
+let quotient = require("../01-unit/04-quotient");
+
 // ==================================================
 // DEFINE FUNCTION(S)
 // ==================================================
