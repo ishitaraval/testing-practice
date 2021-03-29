@@ -7,6 +7,12 @@ if (num1==0 || num2==0)
 {
   return 0;
 }
+if (num1==0){
+  return num2;
+}
+else {
+  return num1;
+}
 }
 
 // ==================================================
@@ -36,7 +42,8 @@ try {
   // Test Case 4
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
-
+  var result = product(2, null);
+  if (result !== 2) throw new Error('Expected product(2) to be 2. Received: ' + result);
   // --------------------------------------------------
   // Test Case 5
   // --------------------------------------------------
