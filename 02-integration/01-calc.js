@@ -12,7 +12,8 @@ function calc(operation,num1,num2) {
   
    case "subtract": return diff.difference(num1,num2);
   
-   case "product": return pro.product(num1,num2);
+  
+   case "multiply": return pro.product(num1,num2);
 
    case "quotient": return quo.quotient(num1,num2);
   
