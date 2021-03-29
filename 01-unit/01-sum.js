@@ -35,8 +35,8 @@ try {
   // Test Case 4
   // --------------------------------------------------
   // When invoked with no numbers, it should return 0.
-  var result = sum(null,null);
-  if (result !== 2) throw new Error('Expected sum(null,null) to be 0. Received: ' + result);
+  var result = sum(null,0);
+  if (result !== 0) throw new Error('Expected sum(null,0) to be 0. Received: ' + result);
 
   console.log('All tests passed successfully.');
 
