@@ -3,6 +3,10 @@
 // ==================================================
 function product(num1,num2) {
 return num1*num2;
+if (num1==0 || num2==0)
+{
+  return 0;
+}
 }
 
 // ==================================================
@@ -20,7 +24,8 @@ try {
   // Test Case 2
   // --------------------------------------------------
   // It should return 0 when either of the numbers are 0.
-
+  var result = product(2, 2);
+  if (result !== 0) throw new Error('Expected product(2, 0) or product(0,2) to be 0. Received: ' + result);
   // --------------------------------------------------
   // Test Case 3
   // --------------------------------------------------
