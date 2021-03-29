@@ -28,7 +28,7 @@ try {
   // --------------------------------------------------
   // When invoked with only 1 number, it should return that number.
   var result = difference(1, null);
-  if (result !== 0) throw new Error('Expected difference(1) to be 0. Received: ' + result);
+  if (result !== 1) throw new Error('Expected difference(1) to be 0. Received: ' + result);
 
   // --------------------------------------------------
   // Test Case 4
