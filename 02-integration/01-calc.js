@@ -15,7 +15,7 @@ function calc(operation,num1,num2) {
   
    case "multiply": return pro.product(num1,num2);
 
-   case "quotient": return quo.quotient(num1,num2);
+   case "modulo": return quo.quotient(num1,num2);
   
    case "error": return "Specify an operation from add,subtract,product,quotient";
  
@@ -51,7 +51,8 @@ try {
   // Test Case 4
   // --------------------------------------------------
   // It should return the correct quotient when the user provides: 'divide', 9, 3.
-
+  var result = calc('modulo', 9, 3);
+  if (result !== 0) throw new Error('Expected calc("modulo", 9, 3) to be 0. Received: ' + result);
   // --------------------------------------------------
   // Test Case 5
   // --------------------------------------------------
