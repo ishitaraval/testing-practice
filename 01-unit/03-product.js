@@ -7,7 +7,7 @@ if (num1==0 || num2==0)
 {
   return 0;
 }
-
+}
 
 // ==================================================
 // DEFINE AND EXECUTE TEST CASES
@@ -54,4 +54,3 @@ try {
   console.warn('Whoops, the following test did not pass:');
   console.error(e.message);
 }
-module.exports = {product}
